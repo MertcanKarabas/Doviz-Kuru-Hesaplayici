@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Döviz Kuru Hesaplayıcı</title>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <header id="header">
+            <h2 id="titleOfPage">Döviz Hesaplayıcı</h2>
+        </header>
+        <div id="islemler-wrapper">
+            <form action="" id="form">
+                <input type="number" id="inputValue" value="1" class="inputText">
+                <select name="dovizKurlari" id="cevirilecekDoviz" class="kurlar">
+                    <option value="TRY" class="option">TRY</option>
+                    <option value="USD" class="option">USD</option>
+                    <option value="EUR" class="option">EUR</option>
+                </select>
+                <button id="changePlacesBtn" type="button" class="button">Yön Değiş</button>
+
+            </form>
+            <div id="result">
+                <input type="text" id="resultOfChange" class="inputText">
+                <select name="dovizKurlari" id="sonucDovizi" class="kurlar">
+                    <option value="TRY" class="option">TRY</option>
+                    <option value="USD" class="option">USD</option>
+                    <option value="EUR" class="option">EUR</option>
+                </select>
+                <button id="cevirBtn" type="button" class="button">Çevir</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
